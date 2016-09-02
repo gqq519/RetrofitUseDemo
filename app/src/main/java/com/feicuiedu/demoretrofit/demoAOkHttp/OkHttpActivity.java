@@ -38,6 +38,11 @@ public class OkHttpActivity extends AppCompatActivity{
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1);
         listView.setAdapter(adapter);
 
+        //https://api.github.com/repos/owner/repo/contributors
+        //https://api.github.com/repos/{owner}/{repo}/contributors
+
+
+
         String owner = "square";
         String repo = "retrofit";
         OkHttpClient okHttpClient = new OkHttpClient();
